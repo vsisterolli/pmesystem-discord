@@ -57,6 +57,20 @@ module.exports = {
                 })
             }
         }
+        // lid RH
+        if(role.id === "1212181141784633345") {
+            if(applier.roles.cache.has("1212181141784633345")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
 
         // PTR
         // membro PTR
@@ -76,6 +90,20 @@ module.exports = {
         }
         // cord PTR
         if(role.id === "1212180874712453161") {
+            if(applier.roles.cache.has("1212180867540193290")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
+        // lid PTR
+        if(role.id === "1212180867540193290") {
             if(applier.roles.cache.has("1212180867540193290")) {
                 receiver.roles.add(role.id)
                 interaction.reply({
@@ -119,6 +147,20 @@ module.exports = {
                 })
             }
         }
+        // lid MKT
+        if(role.id === "1212180693170388992") {
+            if(applier.roles.cache.has("1212180693170388992")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
 
         // EFEX
         // membro EFEX
@@ -138,6 +180,20 @@ module.exports = {
         }
         // cord EFEX
         if(role.id === "1212180433891229716") {
+            if(applier.roles.cache.has("1212180436722130944")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
+        // lid EFEX
+        if(role.id === "1212180436722130944") {
             if(applier.roles.cache.has("1212180436722130944")) {
                 receiver.roles.add(role.id)
                 interaction.reply({
@@ -181,9 +237,23 @@ module.exports = {
                 })
             }
         }
+        // lid CDO
+        if(role.id === "1212178742097481748") {
+            if(applier.roles.cache.has("1212178742097481748")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
 
-        // CDO
-        // membro CDO
+        // ESP
+        // membro ESP
         if(role.id === "1211180881209987112") {
             // cord e lid
             if(applier.roles.cache.has("1208909093197320212") || applier.roles.cache.has("1208903665151119380")) {
@@ -198,8 +268,22 @@ module.exports = {
                 })
             }
         }
-        // cord CDO
+        // cord ESP
         if(role.id === "1208909093197320212") {
+            if(applier.roles.cache.has("1208903665151119380")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
+       // lid ESP
+        if(role.id === "1208903665151119380") {
             if(applier.roles.cache.has("1208903665151119380")) {
                 receiver.roles.add(role.id)
                 interaction.reply({
@@ -243,6 +327,20 @@ module.exports = {
                 })
             }
         }
+        // lid INS
+        if(role.id === "1212177648604811344") {
+            if(applier.roles.cache.has("1212177648604811344")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
 
         // CDT
         // membro CDT
@@ -262,6 +360,20 @@ module.exports = {
         }
         // cord CDT
         if(role.id === "1212181546237435934") {
+            if(applier.roles.cache.has("1212181544047869972")) {
+                receiver.roles.add(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} recebeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
+        // lid CDT
+        if(role.id === "1212181544047869972") {
             if(applier.roles.cache.has("1212181544047869972")) {
                 receiver.roles.add(role.id)
                 interaction.reply({
