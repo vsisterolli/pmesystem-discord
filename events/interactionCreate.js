@@ -33,14 +33,18 @@ module.exports = {
                 })
 
             try {
-                await Promise.all[
-                    interaction.guild.members.cache.get(interaction.user.id).roles.add("1208899371337515119"),
-                    interaction.guild.members.cache.get(interaction.user.id).roles.remove("1208589502998642698"),
-                    interaction.guild.members.cache.get(interaction.user.id).setNickname(userNick)
-                ];
+                await interaction.guild.members.cache.get(interaction.user.id).roles.add("1208899371337515119");
             } catch(e) {
                 console.log(e)
             }
+
+            try {
+                await interaction.guild.members.cache.get(interaction.user.id).roles.remove("1208589502998642698");
+            } catch {}
+
+            try {
+                await interaction.guild.members.cache.get(interaction.user.id).setNickname(userNick)
+            } catch {}
 
             await interaction.editReply({
                 content: "Conta verificada com sucesso!",
