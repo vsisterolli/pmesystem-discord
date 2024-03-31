@@ -133,6 +133,21 @@ module.exports = {
                 })
             }
         }
+        // promot MKT
+        if(role.id === "1223799935766630441") {
+            // cord e lid
+            if(applier.roles.cache.has("1212180696463056896") || applier.roles.cache.has("1212180693170388992")) {
+                receiver.roles.remove(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} perdeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
         // cord MKT
         if(role.id === "1212180696463056896") {
             if(applier.roles.cache.has("1212180693170388992")) {
