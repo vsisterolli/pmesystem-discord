@@ -43,6 +43,21 @@ module.exports = {
                 })
             }
         }
+        // monitoria RH
+        if(role.id === "1227458393673961584") {
+            // cord e lid
+            if(applier.roles.cache.has("1212181145043599481") || applier.roles.cache.has("1212181141784633345")) {
+                receiver.roles.remove(role.id)
+                interaction.reply({
+                    content: `${receiver.nickname} perdeu o cargo ${role.name}.`
+                })
+            } else {
+                interaction.reply({
+                    embeds: [error],
+                    ephemeral: true
+                })
+            }
+        }
         // cord RH
         if(role.id === "1212181145043599481") {
             if(applier.roles.cache.has("1212181141784633345")) {
